@@ -1,0 +1,62 @@
+body {
+  height: 100%; /* Устанавливаем высоту body и html в 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerReg {
+  margin-top: 50px;
+}
+
+.divBtnOrders {
+  display: flex;
+  margin: 30px 30px !important;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.divBtnOrders button {
+  width: 10rem;
+}
+
+.orderForm {
+  margin-top: 40px;
+}
+
+.divNotToSee {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #868484; /* Белый цвет */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.375); /* Тень */
+}
+
+.divCanSee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный серый фон */
+}
+
+.newNotification {
+  display: block;
+  position: absolute;
+  right: 650px;
+  bottom: -100px;
+  padding: 2%;
+  border: 1px green solid;
+}

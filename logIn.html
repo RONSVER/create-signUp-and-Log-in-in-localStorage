@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logIn.css" />
+    <title>log in</title>
+  </head>
+  <body>
+    <div class="containerReg">
+      <p>Log In</p>
+      <input class="emailLogIn" type="text" placeholder="gmail" />
+      <input class="passwordLogIn" type="text" placeholder="password" />
+      <button class="logInBtn">logIn</button>
+    </div>
+
+    <form class="orderForm" style="display: none">
+      <label for="address">Адрес:</label>
+      <input type="text" class="address" name="address" required /><br /><br />
+
+      <label for="price">Цена:</label>
+      <input type="text" class="price" name="price" required /><br /><br />
+
+      <label for="cost">Стоимость:</label>
+      <input type="text" class="cost" name="cost" required /><br /><br />
+
+      <button class="buttonOrder" type="submit">Отправить заказ</button>
+    </form>
+
+    <!-- <div class="divNotToSee">
+      <div class="divCanSee">
+        <p class="divOneP">оплатить</p>
+      </div>
+    </div>
+
+    <div class="divNotToSee">
+      <div class="divCanSee">
+        <p class="divOne P">отправить</p>
+      </div>
+    </div>
+
+    <div class="divNotToSee">
+      <div class="divCanSee">
+        <p class="divOneP">принять</p>
+      </div>
+    </div>
+
+    <div class="divNotToSee">
+      <div class="divCanSee">
+        <p class="divOneP">завершить заказ</p>
+      </div>
+    </div> -->
+
+    <div class="notification" style="display: none">Заказ создан!</div>
+
+    <div id="notificationsOrders"></div>
+  </body>
+  <script type="module" src="logIn.js"></script>
+</html>
